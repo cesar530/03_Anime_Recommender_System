@@ -28,23 +28,18 @@ Este proyecto implementa un sistema de recomendación de anime que utiliza técn
 
 ## 🏗️ Arquitectura
 
+```
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-
 │   User Query    │────▶│ Sentence-BERT    │────▶│   Query         │
-
 │   "action..."   │     │ Embedding Model  │     │   Embedding     │
-
 └─────────────────┘     └──────────────────┘     └────────┬────────┘
                                                           │
                                                           ▼
-
 ┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-
 │ Recommendations │◀────│     Ranking      │◀────│   Faiss Index   │
-
 │   (Top K)       │     │ (Hybrid Score)   │     │   (Similarity)  │
-
 └─────────────────┘     └──────────────────┘     └─────────────────┘
+```
 
 ---
 
@@ -96,45 +91,28 @@ La documentación interactiva estará disponible en:
 
 ## 📁 Estructura del Proyecto
 
+```
 03_Anime_Recommender_System/
-
 │
-
 ├── 📓 anime_recommender_notebook.ipynb  # Notebook principal con pipeline completo
-
 ├── 🐍 anime_recommender.py              # API FastAPI
-
 ├── 🔧 utils.py                          # Funciones utilitarias y clase principal
-
 ├── 📋 requirements.txt                  # Dependencias Python
-
 ├── 🚫 .gitignore                        # Archivos ignorados por Git
-
 ├── 📖 README.md                         # Este archivo
-
 │
-
 ├── 📂 data/                             # Datasets (no incluido en Git)
-
 │   └── anime.csv
-
 │
-
 ├── 📂 models/                           # Modelos guardados
-
 │   └── anime_recommender/
-
 │       ├── embeddings.npy
-
 │       ├── faiss.index
-
 │       ├── anime_data.pkl
-
 │       └── config.pkl
-
 │
-
 └── 📂 embeddings/                       # Cache de embeddings
+```
 
 ---
 
@@ -265,9 +243,9 @@ curl http://localhost:8000/health
 
 ## 👤 Autor
 
-- Autor : **César Adrián Delgado Díaz**
-- LinkedIn: [linkedin.com/in/cesar-delgado-diaz](linkedin.com/in/cesar-delgado-diaz)
-- GitHub: [https://github.com/cesar530](https://github.com/cesar530)
+- 👤 Autor : **César Adrián Delgado Díaz**
+- 💼 LinkedIn: [linkedin.com/in/cesar-delgado-diaz](linkedin.com/in/cesar-delgado-diaz)
+- 🐙 GitHub: [github.com/tu-usuario](https://github.com/cesar530)
 
 ---
 
