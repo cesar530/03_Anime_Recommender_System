@@ -267,7 +267,7 @@ curl http://localhost:8000/health
 
 - Autor : **César Adrián Delgado Díaz**
 - LinkedIn: [linkedin.com/in/cesar-delgado-diaz](linkedin.com/in/cesar-delgado-diaz)
-- GitHub: [github.com/cesar-delgado](github.com/cesar-delgado)
+- GitHub: [https://github.com/cesar530](https://github.com/cesar530)
 
 ---
 
